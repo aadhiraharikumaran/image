@@ -33,7 +33,7 @@ def gender_classification():
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
-        st.image(image, caption='Uploaded Image.', use_column_width=True)
+        st.image(image, caption='Uploaded Image.', use_container_width=True)
 
         # Call the Hugging Face API
         with st.spinner('Classifying...'):
@@ -68,7 +68,7 @@ def ai_image_detector():
 
     if uploaded_file is not None:
         # Display the uploaded image
-        st.image(uploaded_file, caption='Uploaded Image.', use_column_width=True)
+        st.image(uploaded_file, caption='Uploaded Image.', use_container_width=True)
 
         # Convert image to bytes
         image_bytes = uploaded_file.read()
@@ -102,7 +102,7 @@ def is_artificial_detector():
 
     if uploaded_file is not None:
         # Display the uploaded image
-        st.image(uploaded_file, caption='Uploaded Image.', use_column_width=True)
+        st.image(uploaded_file, caption='Uploaded Image.', use_container_width=True)
 
         # Convert image to bytes
         image_bytes = uploaded_file.read()
